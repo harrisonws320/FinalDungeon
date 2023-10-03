@@ -36,6 +36,14 @@ namespace MyDungeonApp
                 Weapon w9 = new Weapon("Red Scepter", 1, 10, 5, false, WeaponType.Morningstar);
                 Weapon w10 = new Weapon("Death's Scythe", 3, 15, 3, true, WeaponType.Scythe);
 
+                Monster m = new();
+                //setup necessary resources
+                Monster m1 = new("Stavrogin", "Demon of Despair", 50, 20, 70, 3, "Nihilism", w6);
+                Monster m2 = new("Pope Bacon X", "Demon of Pestilence", 50, 20, 70, 2, "Soul Harvester", w7);
+                Monster m3 = new("Zarathustra", "Demon of Tyranny", 50, 20, 70, 5, "Apocalypse", w9);
+                Monster m4 = new("Pynchon", "Demon of Suffering", 50, 20, 70, 2, "Red Scepter", w9);
+                Monster m5 = new("Milton", "Demon of Hopelessness", 50, 20, 70, 8, "Death's Scythe", w10);
+
                 List<Player> players = new List<Player>
             {
                 new Player("Soren de Silentio", "\"Dread\"", 70, 3, 60, Race.Aasimar, "Planetouched humanoids with celestial heritage and power", w1, 0),
